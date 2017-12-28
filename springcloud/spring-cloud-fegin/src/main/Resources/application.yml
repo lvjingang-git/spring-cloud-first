@@ -1,0 +1,13 @@
+server:
+  port: 5081
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://root:root@127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: consumer-feign

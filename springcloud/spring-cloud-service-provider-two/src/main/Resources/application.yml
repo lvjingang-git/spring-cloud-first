@@ -1,0 +1,15 @@
+server:
+  port: 6080
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+     defaultZone: http://root:root@127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    lease-expiration-duration-in-seconds: 5
+spring:
+  application:
+    name: provider-service

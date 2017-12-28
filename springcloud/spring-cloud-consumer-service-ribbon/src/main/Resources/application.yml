@@ -1,0 +1,19 @@
+server:
+  port: 7080
+#配置eureka地址
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://root:root@127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+#配置服务应用名
+spring:
+  application:
+    name: consumer-service
+#配置轮训从eureka中获取微服务地址
+provider-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -4,6 +4,7 @@ import com.lv.jingang.entity.User;
 import com.lv.jingang.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -28,5 +29,10 @@ public class ConsumerController {
     @GetMapping("/testFegin")
     public User testFegin(){
        return testService.getFegin();
+    }
+
+    @GetMapping("/get/{id}")
+    public User get(@PathVariable("id") String id){
+        return testService.get(id);
     }
 }

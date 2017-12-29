@@ -6,6 +6,7 @@ import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 /**
  * 项目名称：springcloud
@@ -38,5 +39,10 @@ public class ProviderController {
     public String serviceUrl(){
         InstanceInfo nextServerFromEureka = this.eurekaClient.getNextServerFromEureka("PROVIDER-SERVICE", false);
         return nextServerFromEureka.getHomePageUrl();
+    }
+
+    @GetMapping("/get/{id}")
+    public User get(@PathVariable("id") String id){
+        return providerService.get(id);
     }
 }

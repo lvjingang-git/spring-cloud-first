@@ -25,4 +25,11 @@ public class ProviderService {
         u.setId("666");
         return u;
     }
+    public User get(String id) {
+        User u=new User();
+        u.setAge("888");
+        u.setId(id);
+        u.setUserName("6080--------成功了");
+        return u;
+    }
 }

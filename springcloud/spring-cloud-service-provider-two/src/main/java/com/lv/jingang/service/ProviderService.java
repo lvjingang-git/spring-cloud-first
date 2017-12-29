@@ -18,11 +18,20 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class ProviderService {
+
     public User test(){
         User u=new User();
         u.setUserName("吕金刚");
         u.setAge("18");
         u.setId("666");
+        return u;
+    }
+
+    public User get(String id) {
+        User u=new User();
+        u.setAge("888");
+        u.setId(id);
+        u.setUserName("8080-----------成功了");
         return u;
     }
 }

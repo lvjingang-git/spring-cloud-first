@@ -12,6 +12,11 @@ public interface TestService {
     @RequestMapping(value="/test",method = RequestMethod.GET)
     public User getFegin();
 
+    //必须加@PathVariable注解,而且不能使用GetMappering这个注解
     @RequestMapping(value = "/get/{id}",method = RequestMethod.GET)
     public User get(@PathVariable("id")String id);
+
+    @RequestMapping(value = "/post",method = RequestMethod.POST)
+    public User post(User u);
+
 }

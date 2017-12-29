@@ -35,4 +35,9 @@ public class ConsumerController {
     public User get(@PathVariable("id") String id){
         return testService.get(id);
     }
+
+    @GetMapping("/post")
+    public User post(User u){
+        return testService.post(u);
+    }
 }

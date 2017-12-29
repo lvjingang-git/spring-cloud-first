@@ -5,9 +5,8 @@ import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.lv.jingang.service.ProviderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 /**
  * 项目名称：springcloud
  *
@@ -48,5 +47,10 @@ public class ProviderController {
     @GetMapping("/get/{id}")
     public User get(@PathVariable("id") String id){
         return providerService.get(id);
+    }
+
+    @PostMapping("/post")
+    public User post(@RequestBody User u){
+        return providerService.post(u);
     }
 }

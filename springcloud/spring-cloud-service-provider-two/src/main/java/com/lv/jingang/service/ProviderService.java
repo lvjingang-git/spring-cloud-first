@@ -34,4 +34,8 @@ public class ProviderService {
         u.setUserName("8080-----------成功了");
         return u;
     }
+
+    public User post(User u) {
+        return u;
+    }
 }

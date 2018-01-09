@@ -11,3 +11,13 @@ eureka:
 spring:
   application:
     name: consumer-feign
+#配置fegin的日志
+logging:
+  level:
+    com.lv.jingang.service.TestService: debug
+#解决第一次请求报超时异常 方案一
+hystrix.command.default.execution.timeout.enabled: false
+#方案二
+#hystrx.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
+#方案三
+#feign.hystrix.enabled: false

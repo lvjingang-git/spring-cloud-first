@@ -31,11 +31,26 @@ public class ConsumerController {
        return testService.getFegin();
     }
 
+    @GetMapping("/test/{id}")
+    public User test(@PathVariable("id") String id){
+        return testService.get(id);
+    }
+
+    /**
+     * 采用自定义的feign
+     * @param id
+     * @return
+     */
     @GetMapping("/get/{id}")
     public User get(@PathVariable("id") String id){
         return testService.get(id);
     }
 
+    /**
+     * 采用默认feign
+     * @param u
+     * @return
+     */
     @GetMapping("/post")
     public User post(User u){
         return testService.post(u);

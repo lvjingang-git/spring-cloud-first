@@ -1,15 +1,15 @@
 package com.lv.jingang.service;
 
+
 import com.lv.configuration.FeginConfiguration;
 import com.lv.jingang.entity.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name="provider-service",configuration = FeginConfiguration.class)
-public interface TestService {
+@FeignClient(name="provider-service")
+public interface TestService2 {
     @RequestMapping(value="/test",method = RequestMethod.GET)
     public User getFegin();
 

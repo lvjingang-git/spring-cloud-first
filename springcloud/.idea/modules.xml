@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gang-spring-cloud-eureka/gang-spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/gang-spring-cloud-eureka/gang-spring-cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gang-spring-cloud-eureka-gao/gang-spring-cloud-eureka-gao.iml" filepath="$PROJECT_DIR$/gang-spring-cloud-eureka-gao/gang-spring-cloud-eureka-gao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer-service/spring-cloud-consumer-service.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer-service/spring-cloud-consumer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer-service-ribbon/spring-cloud-consumer-service-ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer-service-ribbon/spring-cloud-consumer-service-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-fegin/spring-cloud-fegin.iml" filepath="$PROJECT_DIR$/spring-cloud-fegin/spring-cloud-fegin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-service-provider/spring-cloud-service-provider.iml" filepath="$PROJECT_DIR$/spring-cloud-service-provider/spring-cloud-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-service-provider-two/spring-cloud-service-provider-two.iml" filepath="$PROJECT_DIR$/spring-cloud-service-provider-two/spring-cloud-service-provider-two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudeurekagao.iml" filepath="$PROJECT_DIR$/springcloudeurekagao.iml" />
+    </modules>
+  </component>
+</project>
